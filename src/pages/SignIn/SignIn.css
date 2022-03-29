@@ -1,0 +1,89 @@
+.container-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+.login {
+    background: #eaeaec;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-area {
+    display: flex;
+    justify-content: center;
+    background: #181c2e;
+    width: 100%;
+}
+
+.logo-area img {
+    padding: 20px;
+    width: 170px;
+    height: 130px;
+}
+
+.login input {
+    margin-bottom: 15px;
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+form {
+    margin-top: 1.5em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    height: 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #181c2e;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: #181c2e;
+}
+
+.login a {
+    margin: 1.5em 0;
+    color: #000;
+    cursor: pointer;
+}
+
+.divInput {
+    display: flex;
+}
+
+.divInput input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+}
+
+.buttonVisibility {
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 8px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
