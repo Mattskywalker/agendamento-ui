@@ -4,18 +4,9 @@ import { AuthContext } from "../../contexts/auth";
 import { Link } from "react-router-dom";
 
 import { ExitToApp, Home, Person, Settings } from "@material-ui/icons";
-import { Button } from "@material-ui/core";
 
 export default function Header({ children }) {
     const { user, updateUser, signOut, isAdmin } = useContext(AuthContext);
-
-    const [userData, setUserData] = useState(user);
-
-    console.log(
-        userData.userDetails.authorities.filter(
-            (role) => role.role === "ROLE_ADMIN"
-        )
-    );
 
     console.log(isAdmin());
 
@@ -25,7 +16,7 @@ export default function Header({ children }) {
                 <Link
                     style={{ flexDirection: "column" }}
                     className="image-link"
-                    to={"/profile"}
+                    to={"#"}
                 >
                     <img src={user.userData.avatar} alt="Imagem de perfil" />
                     <h3 style={{ color: "#FFFFFF", width: "fit-content" }}>
@@ -38,13 +29,13 @@ export default function Header({ children }) {
                             <Home></Home>
                             Chamados
                         </Link>
-                        <Link key={"customers"} to="/customers">
+                        <Link key={"customers"} to="#">
                             <Person></Person>
                             Clientes
                         </Link>
                     </>
                 )}
-                <Link to="">
+                <Link to="#">
                     <Settings></Settings>
                     Configurações
                 </Link>

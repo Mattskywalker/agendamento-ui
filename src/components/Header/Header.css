@@ -2,13 +2,14 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    background-color: #a4a9bd;
 }
 
 .children {
     margin-left: 280px;
     height: 100%;
     width: 100%;
+    overflow: auto;
 }
 
 .sidebar {
