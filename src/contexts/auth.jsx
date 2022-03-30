@@ -29,12 +29,6 @@ const AuthProvider = ({ children }) => {
     }, [user]);
 
     function isAdmin() {
-        console.log(user.userDetails.authorities);
-        console.log(
-            user.userDetails.authorities.filter(
-                (authority) => authority.role === "ROLE_ADMIN"
-            )
-        );
         return (
             user.userDetails.authorities.filter(
                 (role) => role.role === "ROLE_ADMIN"
