@@ -4,7 +4,7 @@ import { createBrowserHistory } from "history";
 import AuthProvider from "./contexts/auth";
 
 import Routes from "./Routes";
-import Header from "./components/Header";
+import ShedulingProvider from "./contexts/scheduling";
 
 const history = createBrowserHistory();
 
@@ -12,9 +12,11 @@ function App() {
     return (
         <div className="App">
             <AuthProvider>
-                <Router history={history}>
-                    <Routes />
-                </Router>
+                <ShedulingProvider>
+                    <Router history={history}>
+                        <Routes />
+                    </Router>
+                </ShedulingProvider>
             </AuthProvider>
         </div>
     );
