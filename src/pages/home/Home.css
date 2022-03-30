@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 8px 18px;
+    align-items: center;
+}
+
+.form-scheduling {
+    margin: 10px 80px;
+}
+
+.form-scheduling img {
+    margin-bottom: 1em;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.form-scheduling label {
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+    align-self: flex-start;
+}
+
+.form-scheduling input,
+textarea,
+select {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 0;
+    border-radius: 5px;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.form-scheduling button {
+    max-width: 600px;
+}
+
+.form-scheduling input:disabled {
+    cursor: not-allowed;
+}
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 30px;
+    font-size: 1.5em;
+    transition: all 0.4s;
+}
+
+.logout-btn:hover {
+    background-color: darkgrey;
+    color: #fff;
+}
+
+.search-input {
+    padding: 0.7em;
+    border: 0;
+    border-radius: 5px;
+    max-width: 600px;
+    font-size: 16px;
+}
+
+select:invalid {
+    color: gray;
+}
